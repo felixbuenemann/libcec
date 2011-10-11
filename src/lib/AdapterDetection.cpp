@@ -46,7 +46,9 @@
 
 #elif !defined(__WINDOWS__)
 #include <dirent.h>
+extern "C" {
 #include <libudev.h>
+}
 #include <poll.h>
 #else
 #include <setupapi.h>
